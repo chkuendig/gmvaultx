@@ -9,7 +9,9 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+@property (weak) IBOutlet NSTextField *textField;
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (IBAction)buttonName:(id)sender;
 @end

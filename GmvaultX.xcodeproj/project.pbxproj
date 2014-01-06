@@ -18,6 +18,7 @@
 		AAB09A4F187AF12400580CA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A2E187AF12400580CA8 /* Cocoa.framework */; };
 		AAB09A57187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A55187AF12400580CA8 /* InfoPlist.strings */; };
 		AAB09A59187AF12400580CA8 /* GmvaultXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A58187AF12400580CA8 /* GmvaultXTests.m */; };
+		AAB09A65187B114700580CA8 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A64187B114700580CA8 /* libpython2.7.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,10 @@
 		AAB09A54187AF12400580CA8 /* GmvaultXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GmvaultXTests-Info.plist"; sourceTree = "<group>"; };
 		AAB09A56187AF12400580CA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AAB09A58187AF12400580CA8 /* GmvaultXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GmvaultXTests.m; sourceTree = "<group>"; };
+		AAB09A64187B114700580CA8 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = ../../../../System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config/libpython2.7.dylib; sourceTree = "<group>"; };
+		AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = ../gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
+		AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
+		AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAB09A65187B114700580CA8 /* libpython2.7.dylib in Frameworks */,
 				AAB09A2F187AF12400580CA8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,10 +82,14 @@
 		AAB09A22187AF12400580CA8 = {
 			isa = PBXGroup;
 			children = (
+				AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */,
+				AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */,
+				AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */,
 				AAB09A34187AF12400580CA8 /* GmvaultX */,
 				AAB09A52187AF12400580CA8 /* GmvaultXTests */,
 				AAB09A2D187AF12400580CA8 /* Frameworks */,
 				AAB09A2C187AF12400580CA8 /* Products */,
+				AAB09A64187B114700580CA8 /* libpython2.7.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +164,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AAB09A74187B16F300580CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB09A83187B1E4000580CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB09A96187B1EF800580CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,6 +248,20 @@
 			mainGroup = AAB09A22187AF12400580CA8;
 			productRefGroup = AAB09A2C187AF12400580CA8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AAB09A96187B1EF800580CA8 /* Products */;
+					ProjectRef = AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */;
+				},
+				{
+					ProductGroup = AAB09A83187B1E4000580CA8 /* Products */;
+					ProjectRef = AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */;
+				},
+				{
+					ProductGroup = AAB09A74187B16F300580CA8 /* Products */;
+					ProjectRef = AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AAB09A2A187AF12400580CA8 /* GmvaultX */,
@@ -387,6 +432,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GmvaultX/GmvaultX-Prefix.pch";
 				INFOPLIST_FILE = "GmvaultX/GmvaultX-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +449,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GmvaultX/GmvaultX-Prefix.pch";
 				INFOPLIST_FILE = "GmvaultX/GmvaultX-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -464,6 +517,7 @@
 				AAB09A5E187AF12400580CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAB09A5F187AF12400580CA8 /* Build configuration list for PBXNativeTarget "GmvaultXTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +526,7 @@
 				AAB09A61187AF12400580CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
