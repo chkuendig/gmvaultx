@@ -17,7 +17,7 @@
                BlueprintIdentifier = "AA1939DE187B323500979014"
                BuildableName = "gmvault"
                BlueprintName = "gmvault"
-               ReferencedContainer = "container:GmvaultX.xcodeproj">
+               ReferencedContainer = "container:GMailVault X.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
