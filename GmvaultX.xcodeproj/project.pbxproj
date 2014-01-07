@@ -7,31 +7,84 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA38CB32187B416A00426D34 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A43187AF12400580CA8 /* MainMenu.xib */; };
+		AA658D6E187B43C1003EECC6 /* gmv_runner in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D68187B4351003EECC6 /* gmv_runner */; };
+		AA658D6F187B43C1003EECC6 /* python in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D69187B4351003EECC6 /* python */; };
+		AA658D71187B43E4003EECC6 /* Python.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D6D187B4397003EECC6 /* Python.framework */; };
+		AA658D73187B4415003EECC6 /* __boot__.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D60187B431A003EECC6 /* __boot__.py */; };
+		AA658D74187B4415003EECC6 /* __error__.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D61187B431A003EECC6 /* __error__.sh */; };
+		AA658D75187B4415003EECC6 /* gmv_runner.py in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D62187B431A003EECC6 /* gmv_runner.py */; };
+		AA658D76187B4415003EECC6 /* include in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D63187B431A003EECC6 /* include */; };
+		AA658D77187B4415003EECC6 /* lib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D64187B431A003EECC6 /* lib */; };
+		AA658D78187B4415003EECC6 /* PythonApplet.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D65187B431A003EECC6 /* PythonApplet.icns */; };
+		AA658D79187B4415003EECC6 /* site.pyc in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D66187B431A003EECC6 /* site.pyc */; };
 		AAB09A2F187AF12400580CA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A2E187AF12400580CA8 /* Cocoa.framework */; };
 		AAB09A39187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A37187AF12400580CA8 /* InfoPlist.strings */; };
 		AAB09A3B187AF12400580CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A3A187AF12400580CA8 /* main.m */; };
 		AAB09A3F187AF12400580CA8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A3D187AF12400580CA8 /* Credits.rtf */; };
 		AAB09A42187AF12400580CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A41187AF12400580CA8 /* AppDelegate.m */; };
-		AAB09A45187AF12400580CA8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A43187AF12400580CA8 /* MainMenu.xib */; };
 		AAB09A47187AF12400580CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A46187AF12400580CA8 /* Images.xcassets */; };
-		AAB09A4E187AF12400580CA8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A4D187AF12400580CA8 /* XCTest.framework */; };
-		AAB09A4F187AF12400580CA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A2E187AF12400580CA8 /* Cocoa.framework */; };
-		AAB09A57187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A55187AF12400580CA8 /* InfoPlist.strings */; };
-		AAB09A59187AF12400580CA8 /* GmvaultXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A58187AF12400580CA8 /* GmvaultXTests.m */; };
-		AAB09A65187B114700580CA8 /* libpython2.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A64187B114700580CA8 /* libpython2.7.dylib */; };
+		AAFF5ED2187B8D8900920F9D /* gmvault_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECC187B8D8900920F9D /* gmvault_selected.png */; };
+		AAFF5ED3187B8D8900920F9D /* gmvault.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECD187B8D8900920F9D /* gmvault.png */; };
+		AAFF5ED4187B8D8900920F9D /* scheduler_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECE187B8D8900920F9D /* scheduler_selected.png */; };
+		AAFF5ED5187B8D8900920F9D /* scheduler.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECF187B8D8900920F9D /* scheduler.png */; };
+		AAFF5ED6187B8D8900920F9D /* settings_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ED0187B8D8900920F9D /* settings_selected.png */; };
+		AAFF5ED7187B8D8900920F9D /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ED1187B8D8900920F9D /* settings.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AAB09A50187AF12400580CA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AAB09A23187AF12400580CA8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AAB09A2A187AF12400580CA8;
-			remoteInfo = GmvaultX;
+/* Begin PBXCopyFilesBuildPhase section */
+		AA38CB19187B3E9300426D34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				AA658D6E187B43C1003EECC6 /* gmv_runner in CopyFiles */,
+				AA658D6F187B43C1003EECC6 /* python in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXContainerItemProxy section */
+		AA658D70187B43D7003EECC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA658D71187B43E4003EECC6 /* Python.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA658D72187B440B003EECC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				AA658D73187B4415003EECC6 /* __boot__.py in CopyFiles */,
+				AA658D74187B4415003EECC6 /* __error__.sh in CopyFiles */,
+				AA658D75187B4415003EECC6 /* gmv_runner.py in CopyFiles */,
+				AA658D76187B4415003EECC6 /* include in CopyFiles */,
+				AA658D77187B4415003EECC6 /* lib in CopyFiles */,
+				AA658D78187B4415003EECC6 /* PythonApplet.icns in CopyFiles */,
+				AA658D79187B4415003EECC6 /* site.pyc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AA38CB29187B3F5E00426D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = gmvault/dist/dist/gmv_runner.app/Contents/Info.plist; sourceTree = "<group>"; };
+		AA38CB2B187B3F5E00426D34 /* PkgInfo */ = {isa = PBXFileReference; lastKnownFileType = text; name = PkgInfo; path = gmvault/dist/dist/gmv_runner.app/Contents/PkgInfo; sourceTree = "<group>"; };
+		AA658D60187B431A003EECC6 /* __boot__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = __boot__.py; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/__boot__.py; sourceTree = "<group>"; };
+		AA658D61187B431A003EECC6 /* __error__.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = __error__.sh; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/__error__.sh; sourceTree = "<group>"; };
+		AA658D62187B431A003EECC6 /* gmv_runner.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = gmv_runner.py; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/gmv_runner.py; sourceTree = "<group>"; };
+		AA658D63187B431A003EECC6 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/include; sourceTree = "<group>"; };
+		AA658D64187B431A003EECC6 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/lib; sourceTree = "<group>"; };
+		AA658D65187B431A003EECC6 /* PythonApplet.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PythonApplet.icns; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/PythonApplet.icns; sourceTree = "<group>"; };
+		AA658D66187B431A003EECC6 /* site.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; name = site.pyc; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/site.pyc; sourceTree = "<group>"; };
+		AA658D68187B4351003EECC6 /* gmv_runner */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = gmv_runner; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/gmv_runner; sourceTree = "<group>"; };
+		AA658D69187B4351003EECC6 /* python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = python; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/python; sourceTree = "<group>"; };
+		AA658D6D187B4397003EECC6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = gmvault/dist/dist/gmv_runner.app/Contents/Frameworks/Python.framework; sourceTree = "<group>"; };
 		AAB09A2B187AF12400580CA8 /* GmvaultX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GmvaultX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB09A2E187AF12400580CA8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAB09A31187AF12400580CA8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,15 +99,12 @@
 		AAB09A41187AF12400580CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AAB09A44187AF12400580CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AAB09A46187AF12400580CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AAB09A4C187AF12400580CA8 /* GmvaultXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmvaultXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAB09A4D187AF12400580CA8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AAB09A54187AF12400580CA8 /* GmvaultXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GmvaultXTests-Info.plist"; sourceTree = "<group>"; };
-		AAB09A56187AF12400580CA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AAB09A58187AF12400580CA8 /* GmvaultXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GmvaultXTests.m; sourceTree = "<group>"; };
-		AAB09A64187B114700580CA8 /* libpython2.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpython2.7.dylib; path = ../../../../System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config/libpython2.7.dylib; sourceTree = "<group>"; };
-		AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = ../gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
-		AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
-		AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gmvault.xcodeproj; path = gmvault/gmvault.xcodeproj; sourceTree = "<group>"; };
+		AAFF5ECC187B8D8900920F9D /* gmvault_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gmvault_selected.png; path = toolbar/gmvault_selected.png; sourceTree = "<group>"; };
+		AAFF5ECD187B8D8900920F9D /* gmvault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gmvault.png; path = toolbar/gmvault.png; sourceTree = "<group>"; };
+		AAFF5ECE187B8D8900920F9D /* scheduler_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scheduler_selected.png; path = toolbar/scheduler_selected.png; sourceTree = "<group>"; };
+		AAFF5ECF187B8D8900920F9D /* scheduler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scheduler.png; path = toolbar/scheduler.png; sourceTree = "<group>"; };
+		AAFF5ED0187B8D8900920F9D /* settings_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings_selected.png; path = toolbar/settings_selected.png; sourceTree = "<group>"; };
+		AAFF5ED1187B8D8900920F9D /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = toolbar/settings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,34 +112,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB09A65187B114700580CA8 /* libpython2.7.dylib in Frameworks */,
 				AAB09A2F187AF12400580CA8 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAB09A49187AF12400580CA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAB09A4F187AF12400580CA8 /* Cocoa.framework in Frameworks */,
-				AAB09A4E187AF12400580CA8 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA38CB2D187B3F6100426D34 /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				AA658D6A187B4371003EECC6 /* Frameworks */,
+				AA38CB29187B3F5E00426D34 /* Info.plist */,
+				AA658D67187B4348003EECC6 /* MacOS */,
+				AA38CB2B187B3F5E00426D34 /* PkgInfo */,
+				AA658D5F187B430B003EECC6 /* Resources */,
+			);
+			name = Contents;
+			sourceTree = "<group>";
+		};
+		AA658D5F187B430B003EECC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA658D60187B431A003EECC6 /* __boot__.py */,
+				AA658D61187B431A003EECC6 /* __error__.sh */,
+				AA658D62187B431A003EECC6 /* gmv_runner.py */,
+				AA658D63187B431A003EECC6 /* include */,
+				AA658D64187B431A003EECC6 /* lib */,
+				AA658D65187B431A003EECC6 /* PythonApplet.icns */,
+				AA658D66187B431A003EECC6 /* site.pyc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AA658D67187B4348003EECC6 /* MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				AA658D68187B4351003EECC6 /* gmv_runner */,
+				AA658D69187B4351003EECC6 /* python */,
+			);
+			name = MacOS;
+			sourceTree = "<group>";
+		};
+		AA658D6A187B4371003EECC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA658D6D187B4397003EECC6 /* Python.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA658D82187B85B2003EECC6 /* toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				AAFF5ECC187B8D8900920F9D /* gmvault_selected.png */,
+				AAFF5ECD187B8D8900920F9D /* gmvault.png */,
+				AAFF5ECE187B8D8900920F9D /* scheduler_selected.png */,
+				AAFF5ECF187B8D8900920F9D /* scheduler.png */,
+				AAFF5ED0187B8D8900920F9D /* settings_selected.png */,
+				AAFF5ED1187B8D8900920F9D /* settings.png */,
+			);
+			name = toolbar;
+			sourceTree = "<group>";
+		};
 		AAB09A22187AF12400580CA8 = {
 			isa = PBXGroup;
 			children = (
-				AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */,
-				AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */,
-				AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */,
+				AAB4090F187B3A55000068CD /* gmv_runner.app */,
 				AAB09A34187AF12400580CA8 /* GmvaultX */,
-				AAB09A52187AF12400580CA8 /* GmvaultXTests */,
 				AAB09A2D187AF12400580CA8 /* Frameworks */,
 				AAB09A2C187AF12400580CA8 /* Products */,
-				AAB09A64187B114700580CA8 /* libpython2.7.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				AAB09A2B187AF12400580CA8 /* GmvaultX.app */,
-				AAB09A4C187AF12400580CA8 /* GmvaultXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				AAB09A2E187AF12400580CA8 /* Cocoa.framework */,
-				AAB09A4D187AF12400580CA8 /* XCTest.framework */,
 				AAB09A30187AF12400580CA8 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -137,6 +227,7 @@
 		AAB09A35187AF12400580CA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AA658D82187B85B2003EECC6 /* toolbar */,
 				AAB09A36187AF12400580CA8 /* GmvaultX-Info.plist */,
 				AAB09A37187AF12400580CA8 /* InfoPlist.strings */,
 				AAB09A3A187AF12400580CA8 /* main.m */,
@@ -146,46 +237,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AAB09A52187AF12400580CA8 /* GmvaultXTests */ = {
+		AAB4090F187B3A55000068CD /* gmv_runner.app */ = {
 			isa = PBXGroup;
 			children = (
-				AAB09A58187AF12400580CA8 /* GmvaultXTests.m */,
-				AAB09A53187AF12400580CA8 /* Supporting Files */,
+				AA38CB2D187B3F6100426D34 /* Contents */,
 			);
-			path = GmvaultXTests;
-			sourceTree = "<group>";
-		};
-		AAB09A53187AF12400580CA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AAB09A54187AF12400580CA8 /* GmvaultXTests-Info.plist */,
-				AAB09A55187AF12400580CA8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AAB09A74187B16F300580CA8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AAB09A83187B1E4000580CA8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		AAB09A96187B1EF800580CA8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Products;
+			name = gmv_runner.app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		AA1939DE187B323500979014 /* gmvault */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "gmv-mac-dist";
+			buildConfigurationList = AA1939E1187B323500979014 /* Build configuration list for PBXLegacyTarget "gmvault" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "$(SRCROOT)/gmvault";
+			dependencies = (
+			);
+			name = gmvault;
+			passBuildSettingsInEnvironment = 1;
+			productName = gmvault;
+		};
+/* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
 		AAB09A2A187AF12400580CA8 /* GmvaultX */ = {
@@ -195,6 +272,9 @@
 				AAB09A27187AF12400580CA8 /* Sources */,
 				AAB09A28187AF12400580CA8 /* Frameworks */,
 				AAB09A29187AF12400580CA8 /* Resources */,
+				AA38CB19187B3E9300426D34 /* CopyFiles */,
+				AA658D70187B43D7003EECC6 /* CopyFiles */,
+				AA658D72187B440B003EECC6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -205,24 +285,6 @@
 			productReference = AAB09A2B187AF12400580CA8 /* GmvaultX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AAB09A4B187AF12400580CA8 /* GmvaultXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AAB09A5F187AF12400580CA8 /* Build configuration list for PBXNativeTarget "GmvaultXTests" */;
-			buildPhases = (
-				AAB09A48187AF12400580CA8 /* Sources */,
-				AAB09A49187AF12400580CA8 /* Frameworks */,
-				AAB09A4A187AF12400580CA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AAB09A51187AF12400580CA8 /* PBXTargetDependency */,
-			);
-			name = GmvaultXTests;
-			productName = GmvaultXTests;
-			productReference = AAB09A4C187AF12400580CA8 /* GmvaultXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -231,11 +293,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "christian kuendig";
-				TargetAttributes = {
-					AAB09A4B187AF12400580CA8 = {
-						TestTargetID = AAB09A2A187AF12400580CA8;
-					};
-				};
 			};
 			buildConfigurationList = AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GmvaultX" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -248,24 +305,10 @@
 			mainGroup = AAB09A22187AF12400580CA8;
 			productRefGroup = AAB09A2C187AF12400580CA8 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AAB09A96187B1EF800580CA8 /* Products */;
-					ProjectRef = AAB09A95187B1EF800580CA8 /* gmvault.xcodeproj */;
-				},
-				{
-					ProductGroup = AAB09A83187B1E4000580CA8 /* Products */;
-					ProjectRef = AAB09A82187B1E4000580CA8 /* gmvault.xcodeproj */;
-				},
-				{
-					ProductGroup = AAB09A74187B16F300580CA8 /* Products */;
-					ProjectRef = AAB09A73187B16F300580CA8 /* gmvault.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AAB09A2A187AF12400580CA8 /* GmvaultX */,
-				AAB09A4B187AF12400580CA8 /* GmvaultXTests */,
+				AA1939DE187B323500979014 /* gmvault */,
 			);
 		};
 /* End PBXProject section */
@@ -275,18 +318,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFF5ED7187B8D8900920F9D /* settings.png in Resources */,
+				AA38CB32187B416A00426D34 /* MainMenu.xib in Resources */,
+				AAFF5ED6187B8D8900920F9D /* settings_selected.png in Resources */,
+				AAFF5ED4187B8D8900920F9D /* scheduler_selected.png in Resources */,
 				AAB09A39187AF12400580CA8 /* InfoPlist.strings in Resources */,
+				AAFF5ED2187B8D8900920F9D /* gmvault_selected.png in Resources */,
 				AAB09A47187AF12400580CA8 /* Images.xcassets in Resources */,
+				AAFF5ED5187B8D8900920F9D /* scheduler.png in Resources */,
 				AAB09A3F187AF12400580CA8 /* Credits.rtf in Resources */,
-				AAB09A45187AF12400580CA8 /* MainMenu.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AAB09A4A187AF12400580CA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAB09A57187AF12400580CA8 /* InfoPlist.strings in Resources */,
+				AAFF5ED3187B8D8900920F9D /* gmvault.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,23 +343,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAB09A48187AF12400580CA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AAB09A59187AF12400580CA8 /* GmvaultXTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AAB09A51187AF12400580CA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AAB09A2A187AF12400580CA8 /* GmvaultX */;
-			targetProxy = AAB09A50187AF12400580CA8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AAB09A37187AF12400580CA8 /* InfoPlist.strings */ = {
@@ -345,17 +370,34 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		AAB09A55187AF12400580CA8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAB09A56187AF12400580CA8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AA1939DF187B323500979014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA1939E0187B323500979014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		AAB09A5A187AF12400580CA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -458,49 +500,18 @@
 			};
 			name = Release;
 		};
-		AAB09A60187AF12400580CA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GmvaultX.app/Contents/MacOS/GmvaultX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GmvaultX/GmvaultX-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GmvaultXTests/GmvaultXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		AAB09A61187AF12400580CA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GmvaultX.app/Contents/MacOS/GmvaultX";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GmvaultX/GmvaultX-Prefix.pch";
-				INFOPLIST_FILE = "GmvaultXTests/GmvaultXTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AA1939E1187B323500979014 /* Build configuration list for PBXLegacyTarget "gmvault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA1939DF187B323500979014 /* Debug */,
+				AA1939E0187B323500979014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GmvaultX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -515,15 +526,6 @@
 			buildConfigurations = (
 				AAB09A5D187AF12400580CA8 /* Debug */,
 				AAB09A5E187AF12400580CA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AAB09A5F187AF12400580CA8 /* Build configuration list for PBXNativeTarget "GmvaultXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AAB09A60187AF12400580CA8 /* Debug */,
-				AAB09A61187AF12400580CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

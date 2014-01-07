@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>gmvault.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>AA1939DE187B323500979014</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AAB09A2A187AF12400580CA8</key>
 		<dict>
 			<key>primary</key>
