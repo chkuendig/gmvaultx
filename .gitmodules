@@ -1,0 +1,3 @@
+[submodule "gmvault"]
+	path = gmvault
+	url = https://github.com/chkuendig/gmvault.git
