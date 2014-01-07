@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AA38CB32187B416A00426D34 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A43187AF12400580CA8 /* MainMenu.xib */; };
+		AA587691187C4212008CF94C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA587690187C4212008CF94C /* AppDelegate.m */; };
 		AA658D6E187B43C1003EECC6 /* gmv_runner in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D68187B4351003EECC6 /* gmv_runner */; };
 		AA658D6F187B43C1003EECC6 /* python in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D69187B4351003EECC6 /* python */; };
 		AA658D71187B43E4003EECC6 /* Python.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D6D187B4397003EECC6 /* Python.framework */; };
@@ -22,7 +23,6 @@
 		AAB09A39187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A37187AF12400580CA8 /* InfoPlist.strings */; };
 		AAB09A3B187AF12400580CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A3A187AF12400580CA8 /* main.m */; };
 		AAB09A3F187AF12400580CA8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A3D187AF12400580CA8 /* Credits.rtf */; };
-		AAB09A42187AF12400580CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A41187AF12400580CA8 /* AppDelegate.m */; };
 		AAB09A47187AF12400580CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A46187AF12400580CA8 /* Images.xcassets */; };
 		AAFF5ED2187B8D8900920F9D /* gmvault_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECC187B8D8900920F9D /* gmvault_selected.png */; };
 		AAFF5ED3187B8D8900920F9D /* gmvault.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFF5ECD187B8D8900920F9D /* gmvault.png */; };
@@ -73,8 +73,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AA38CB29187B3F5E00426D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = gmvault/dist/dist/gmv_runner.app/Contents/Info.plist; sourceTree = "<group>"; };
 		AA38CB2B187B3F5E00426D34 /* PkgInfo */ = {isa = PBXFileReference; lastKnownFileType = text; name = PkgInfo; path = gmvault/dist/dist/gmv_runner.app/Contents/PkgInfo; sourceTree = "<group>"; };
+		AA58768F187C4212008CF94C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GMailVaultX/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		AA587690187C4212008CF94C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GMailVaultX/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		AA658D60187B431A003EECC6 /* __boot__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = __boot__.py; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/__boot__.py; sourceTree = "<group>"; };
 		AA658D61187B431A003EECC6 /* __error__.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = __error__.sh; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/__error__.sh; sourceTree = "<group>"; };
 		AA658D62187B431A003EECC6 /* gmv_runner.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = gmv_runner.py; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/gmv_runner.py; sourceTree = "<group>"; };
@@ -95,8 +96,6 @@
 		AAB09A3A187AF12400580CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAB09A3C187AF12400580CA8 /* GMailVault X-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GMailVault X-Prefix.pch"; sourceTree = "<group>"; };
 		AAB09A3E187AF12400580CA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		AAB09A40187AF12400580CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AAB09A41187AF12400580CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AAB09A44187AF12400580CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AAB09A46187AF12400580CA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AAFF5ECC187B8D8900920F9D /* gmvault_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gmvault_selected.png; path = toolbar/gmvault_selected.png; sourceTree = "<group>"; };
@@ -123,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				AA658D6A187B4371003EECC6 /* Frameworks */,
-				AA38CB29187B3F5E00426D34 /* Info.plist */,
 				AA658D67187B4348003EECC6 /* MacOS */,
 				AA38CB2B187B3F5E00426D34 /* PkgInfo */,
 				AA658D5F187B430B003EECC6 /* Resources */,
@@ -215,14 +213,14 @@
 		AAB09A34187AF12400580CA8 /* GMailVault X */ = {
 			isa = PBXGroup;
 			children = (
-				AAB09A40187AF12400580CA8 /* AppDelegate.h */,
-				AAB09A41187AF12400580CA8 /* AppDelegate.m */,
+				AA58768F187C4212008CF94C /* AppDelegate.h */,
+				AA587690187C4212008CF94C /* AppDelegate.m */,
 				AAB09A43187AF12400580CA8 /* MainMenu.xib */,
 				AAB09A46187AF12400580CA8 /* Images.xcassets */,
 				AAB09A35187AF12400580CA8 /* Supporting Files */,
 			);
 			name = "GMailVault X";
-			path = GmvaultX;
+			path = GMailVaultX;
 			sourceTree = "<group>";
 		};
 		AAB09A35187AF12400580CA8 /* Supporting Files */ = {
@@ -282,7 +280,7 @@
 			dependencies = (
 			);
 			name = "GMailVault X";
-			productName = GmvaultX;
+			productName = GMailVaultX;
 			productReference = AAB09A2B187AF12400580CA8 /* GMailVault X.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -295,7 +293,7 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "christian kuendig";
 			};
-			buildConfigurationList = AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GMailVault X" */;
+			buildConfigurationList = AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GMailVaultX" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -339,8 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAB09A42187AF12400580CA8 /* AppDelegate.m in Sources */,
 				AAB09A3B187AF12400580CA8 /* main.m in Sources */,
+				AA587691187C4212008CF94C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,8 +473,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GmvaultX/GMailVault X-Prefix.pch";
-				INFOPLIST_FILE = "GmvaultX/GMailVault X-Info.plist";
+				GCC_PREFIX_HEADER = "GMailVaultX/GMailVault X-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/GMailVaultX/GMailVault X-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
@@ -492,8 +490,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GmvaultX/GMailVault X-Prefix.pch";
-				INFOPLIST_FILE = "GmvaultX/GMailVault X-Info.plist";
+				GCC_PREFIX_HEADER = "GMailVaultX/GMailVault X-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/GMailVaultX/GMailVault X-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config",
@@ -515,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GMailVault X" */ = {
+		AAB09A26187AF12400580CA8 /* Build configuration list for PBXProject "GMailVaultX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAB09A5A187AF12400580CA8 /* Debug */,
