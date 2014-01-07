@@ -17,7 +17,7 @@
                 <menuItem title="TasksProject" id="56">
                     <menu key="submenu" title="TasksProject" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About TasksProject" id="58">
+                            <menuItem title="About GMailVault X" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>

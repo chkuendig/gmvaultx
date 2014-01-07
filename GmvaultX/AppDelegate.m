@@ -10,6 +10,10 @@
 
 @implementation AppDelegate
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+    return YES;
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     NSString *path;
     

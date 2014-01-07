@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-               BuildableName = "GmvaultX.app"
-               BlueprintName = "GmvaultX"
-               ReferencedContainer = "container:GmvaultX.xcodeproj">
+               BuildableName = "GMailVault X.app"
+               BlueprintName = "GMailVault X"
+               ReferencedContainer = "container:GMailVault X.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GmvaultX.app"
-            BlueprintName = "GmvaultX"
-            ReferencedContainer = "container:GmvaultX.xcodeproj">
+            BuildableName = "GMailVault X.app"
+            BlueprintName = "GMailVault X"
+            ReferencedContainer = "container:GMailVault X.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GmvaultX.app"
-            BlueprintName = "GmvaultX"
-            ReferencedContainer = "container:GmvaultX.xcodeproj">
+            BuildableName = "GMailVault X.app"
+            BlueprintName = "GMailVault X"
+            ReferencedContainer = "container:GMailVault X.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GmvaultX.app"
-            BlueprintName = "GmvaultX"
-            ReferencedContainer = "container:GmvaultX.xcodeproj">
+            BuildableName = "GMailVault X.app"
+            BlueprintName = "GMailVault X"
+            ReferencedContainer = "container:GMailVault X.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
