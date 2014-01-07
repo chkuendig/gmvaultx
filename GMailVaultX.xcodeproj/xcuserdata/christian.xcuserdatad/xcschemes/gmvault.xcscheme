@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-               BuildableName = "GMailVault X.app"
-               BlueprintName = "GMailVault X"
-               ReferencedContainer = "container:GMailVault X.xcodeproj">
+               BlueprintIdentifier = "AA1939DE187B323500979014"
+               BuildableName = "gmvault"
+               BlueprintName = "gmvault"
+               ReferencedContainer = "container:GMailVaultX.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GMailVault X.app"
-            BlueprintName = "GMailVault X"
-            ReferencedContainer = "container:GMailVault X.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -48,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GMailVault X.app"
-            BlueprintName = "GMailVault X"
-            ReferencedContainer = "container:GMailVault X.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -66,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AAB09A2A187AF12400580CA8"
-            BuildableName = "GMailVault X.app"
-            BlueprintName = "GMailVault X"
-            ReferencedContainer = "container:GMailVault X.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
