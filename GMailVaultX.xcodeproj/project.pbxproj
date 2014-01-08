@@ -19,6 +19,8 @@
 		AA658D77187B4415003EECC6 /* lib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D64187B431A003EECC6 /* lib */; };
 		AA658D78187B4415003EECC6 /* PythonApplet.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D65187B431A003EECC6 /* PythonApplet.icns */; };
 		AA658D79187B4415003EECC6 /* site.pyc in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D66187B431A003EECC6 /* site.pyc */; };
+		AAACE460187E07B200DE5E8F /* SetupDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAACE45F187E07B200DE5E8F /* SetupDialog.xib */; };
+		AAACE466187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = AAACE465187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m */; };
 		AAB09A2F187AF12400580CA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A2E187AF12400580CA8 /* Cocoa.framework */; };
 		AAB09A39187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A37187AF12400580CA8 /* InfoPlist.strings */; };
 		AAB09A3B187AF12400580CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAB09A3A187AF12400580CA8 /* main.m */; };
@@ -86,6 +88,9 @@
 		AA658D68187B4351003EECC6 /* gmv_runner */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = gmv_runner; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/gmv_runner; sourceTree = "<group>"; };
 		AA658D69187B4351003EECC6 /* python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = python; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/python; sourceTree = "<group>"; };
 		AA658D6D187B4397003EECC6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = gmvault/dist/dist/gmv_runner.app/Contents/Frameworks/Python.framework; sourceTree = "<group>"; };
+		AAACE45F187E07B200DE5E8F /* SetupDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SetupDialog.xib; path = GMailVaultX/SetupDialog.xib; sourceTree = "<group>"; };
+		AAACE464187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		AAACE465187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
 		AAB09A2B187AF12400580CA8 /* GMailVault X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMailVault X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB09A2E187AF12400580CA8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAB09A31187AF12400580CA8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -173,9 +178,19 @@
 			name = toolbar;
 			sourceTree = "<group>";
 		};
+		AAACE467187E158F00DE5E8F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AAACE464187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.h */,
+				AAACE465187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		AAB09A22187AF12400580CA8 = {
 			isa = PBXGroup;
 			children = (
+				AAACE45F187E07B200DE5E8F /* SetupDialog.xib */,
 				AAB4090F187B3A55000068CD /* gmv_runner */,
 				AAB09A34187AF12400580CA8 /* GMailVault X */,
 				AAB09A2D187AF12400580CA8 /* Frameworks */,
@@ -213,6 +228,7 @@
 		AAB09A34187AF12400580CA8 /* GMailVault X */ = {
 			isa = PBXGroup;
 			children = (
+				AAACE467187E158F00DE5E8F /* Util */,
 				AA58768F187C4212008CF94C /* AppDelegate.h */,
 				AA587690187C4212008CF94C /* AppDelegate.m */,
 				AAB09A43187AF12400580CA8 /* MainMenu.xib */,
@@ -326,6 +342,7 @@
 				AAB09A47187AF12400580CA8 /* Images.xcassets in Resources */,
 				AAFF5ED5187B8D8900920F9D /* scheduler.png in Resources */,
 				AAB09A3F187AF12400580CA8 /* Credits.rtf in Resources */,
+				AAACE460187E07B200DE5E8F /* SetupDialog.xib in Resources */,
 				AAFF5ED3187B8D8900920F9D /* gmvault.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +356,7 @@
 			files = (
 				AAB09A3B187AF12400580CA8 /* main.m in Sources */,
 				AA587691187C4212008CF94C /* AppDelegate.m in Sources */,
+				AAACE466187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

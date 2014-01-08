@@ -12,6 +12,11 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+//setup
+@property (assign) IBOutlet NSWindow *setupDialog;
+@property (weak) IBOutlet NSTextField *emailAddressInput;
+
+// toolbar
 @property (weak) IBOutlet NSToolbarItem *tabButton1;
 @property (weak) IBOutlet NSToolbarItem *tabButton2;
 @property (weak) IBOutlet NSToolbarItem *tabButton3;
@@ -25,6 +30,9 @@
 @property  NSImage *tabImage2_selected;
 @property  NSImage *tabImage3_selected;
 
+// console
+@property (weak) IBOutlet NSScrollView *scrollView;
+
 /**
  * Project Package
  */
@@ -32,7 +40,7 @@
 @property (weak) IBOutlet NSProgressIndicator *spinner;
 @property (weak) IBOutlet NSButton *buildButton;
 @property (weak) IBOutlet NSTextField *parameter;
-- (IBAction)startTask:(id)sender;
+- (IBAction)startCustomTask:(id)sender;
 - (IBAction)stopTask:(id)sender;
 
 /**
@@ -41,6 +49,7 @@
 @property (nonatomic, strong) __block NSTask *buildTask;
 @property (nonatomic) BOOL isRunning;
 @property (nonatomic, strong) NSPipe *outputPipe;
+@property (nonatomic, strong) NSPipe *inputPipe;
 @property (nonatomic, strong) NSPipe *errorPipe;
 
 
