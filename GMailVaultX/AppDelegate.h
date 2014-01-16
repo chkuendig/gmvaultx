@@ -8,13 +8,22 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+#import <WebKit/WebKit.h>
 
-@property (assign) IBOutlet NSWindow *window;
+@interface AppDelegate : NSObject <NSApplicationDelegate>{
+    NSOperationQueue *gmvOperationQueue;
+    NSOperationQueue *outputOperationQueue;
+}
 
-//setup
-@property (assign) IBOutlet NSWindow *setupDialog;
-@property (weak) IBOutlet NSTextField *emailAddressInput;
+// Interface
+-(void)printMessage:(NSString*)message;
+-(void)printError:(NSString*)message;
+-(IBAction)pressEnter;
+-(IBAction)refreshEmailSelector;
+- (void)runScript:(NSArray*)arguments
+    outputHandler:(void(^)(NSString* string))outputHandler
+    returnHandler:(void(^)())returnHandler;
+- (IBAction)stopTask:(id)sender;
 
 // toolbar
 @property (weak) IBOutlet NSToolbarItem *tabButton1;
@@ -31,26 +40,30 @@
 @property  NSImage *tabImage3_selected;
 
 // console
-@property (weak) IBOutlet NSScrollView *scrollView;
+
+@property (unsafe_unretained) IBOutlet NSTextView *outputText;
 
 /**
  * Project Package
  */
-@property (unsafe_unretained) IBOutlet NSTextView *outputText;
+
+
+/* 
+ Main Window/Tab
+ */
+@property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSProgressIndicator *spinner;
-@property (weak) IBOutlet NSButton *buildButton;
+@property (weak) IBOutlet NSButton *runButton;
 @property (weak) IBOutlet NSTextField *parameter;
-- (IBAction)startCustomTask:(id)sender;
-- (IBAction)stopTask:(id)sender;
+@property (weak) IBOutlet NSPopUpButton *eMailSelector;
 
 /**
  * NSTask 
  */
 @property (nonatomic, strong) __block NSTask *buildTask;
 @property (nonatomic) BOOL isRunning;
-@property (nonatomic, strong) NSPipe *outputPipe;
-@property (nonatomic, strong) NSPipe *inputPipe;
-@property (nonatomic, strong) NSPipe *errorPipe;
-
+@property NSFileHandle *masterHandle;
+@property (copy) void (^taskReturnHandler) () ;
+@property (copy) void (^taskOutputHandler) (NSString* string);
 
 @end
