@@ -10,6 +10,11 @@
 
 #import <WebKit/WebKit.h>
 
+
+
+extern int const inititalSheetWidth;
+extern int const inititalSheetHeight;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
     NSOperationQueue *gmvOperationQueue;
     NSOperationQueue *outputOperationQueue;
@@ -52,10 +57,9 @@
  Main Window/Tab
  */
 @property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSProgressIndicator *spinner;
-@property (weak) IBOutlet NSButton *runButton;
-@property (weak) IBOutlet NSTextField *parameter;
 @property (weak) IBOutlet NSPopUpButton *eMailSelector;
+@property NSString *activeAccount;
+@property (weak) IBOutlet NSTextField *lastScheduledRun;
 
 /**
  * NSTask 
@@ -65,5 +69,9 @@
 @property NSFileHandle *masterHandle;
 @property (copy) void (^taskReturnHandler) () ;
 @property (copy) void (^taskOutputHandler) (NSString* string);
+
+@property (weak) IBOutlet NSProgressIndicator *spinner;
+@property (weak) IBOutlet NSButton *runButton;
+@property (weak) IBOutlet NSTextField *parameter;
 
 @end

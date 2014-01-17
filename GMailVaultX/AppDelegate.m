@@ -7,6 +7,9 @@
 #import "NSFileManager+DirectoryLocations.h"
 #import "NSTask+PTY.h"
 
+int const inititalSheetWidth = 300;
+int const inititalSheetHeight = 120;
+
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -41,10 +44,13 @@
     // load inventory of email accounts
     [self refreshEmailSelector];
     
+    // add startup message to console
+    [self printMessage:@"GMailVault X started."];
+    
    }
 
 /* Menubar Tabs */
-- (IBAction)selectTab1:(id)sender {
+/*- (IBAction)selectTab1:(id)sender {
     self.tabButton2.image = self.tabImage2;
     self.tabButton3.image = self.tabImage3;
     [[self tabView] selectTabViewItemAtIndex:0];
@@ -61,49 +67,79 @@
     self.tabButton2.image = self.tabImage2;
     [[self tabView] selectTabViewItemAtIndex:2];
     self.tabButton3.image = self.tabImage3_selected;
+}*/
+
+
+/*
+ Main Window/Tab
+ */
+
+- (IBAction)refreshEmailSelector {
+    
+    
+    NSError *error = nil;
+    NSArray *desktopFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSFileManager defaultManager] applicationSupportDirectory] error:&error];
+    
+    if(desktopFiles == nil){
+        NSLog(@"%@", [error localizedDescription]);
+        [self printError:[error localizedDescription]];
+        return;
+    }
+    
+    
+    [self.eMailSelector removeAllItems];
+    
+    [self.eMailSelector addItemWithTitle:@""];
+    for (id filename in desktopFiles){
+        BOOL isDir;
+        NSString* emaildir = [[NSFileManager defaultManager] applicationSupportDirectory];
+        emaildir=   [emaildir stringByAppendingPathComponent:filename];
+        if([[NSFileManager defaultManager]
+            
+            fileExistsAtPath:emaildir isDirectory:&isDir] && isDir){
+            [self.eMailSelector addItemWithTitle:filename];
+        }
+    }
+}
+- (IBAction)selectEmailAccount:(id)sender {
+    NSString *selectedEmail = self.eMailSelector.selectedItem.title;
+    NSLog(@"%@",selectedEmail);
+    self.activeAccount = selectedEmail;
+   [self refreshLastScheduledRun];
 }
 
+- (void)refreshLastScheduledRun{
 
-/* Setup Wizard */
-/*- (IBAction)selectSetupTab0:(id)sender {
-   self.setupWizard = [[NSWindowController alloc] initWithWindow:self.setupDialog];
-    [self.setupWizard showWindow:nil];
+    NSString* logFile = [[NSFileManager defaultManager] applicationSupportDirectory];
+    logFile=   [logFile stringByAppendingPathComponent: self.activeAccount ];
+    logFile=   [logFile stringByAppendingString:@".log"];
     
-    [[self setupTabView] selectTabViewItemAtIndex:0];
-   // NSWindow* _window = self.mainWindow;
+    NSString *lastDateStr;
     
-    NSLog(@"%@",_window);
-    
-    // User has asked to see the custom display. Display it.
-    
-    {
+    BOOL isDir;
+    if ([[NSFileManager defaultManager] fileExistsAtPath:logFile isDirectory:&isDir] && !isDir) {
+        NSError *error;
+      
         
-       // if (!self.setupWizardSheet)
-            
-            //Check the myCustomSheet instance variable to make sure the custom sheet does not already exist.
-            
-            [NSBundle loadNibNamed: @"SetupWizard" owner: self];
-        
-        
-        
-        [NSApp beginSheet: self.setupWizardSheet
-         
-           modalForWindow: _window
-         
-            modalDelegate: self
-         
-           didEndSelector: @selector(didEndSheet:returnCode:contextInfo:)
-         
-              contextInfo: nil];
-        
-        
-        
-        // Sheet is up here.
-        
-        // Return processing to the event loop
-        
+    NSDictionary *attributes = [[NSFileManager defaultManager] attributesOfItemAtPath:logFile error:&error];
+    if (!error) {
+        NSDate *date = [attributes fileModificationDate];
+        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init] ;
+        [dateFormatter setDateStyle:NSDateFormatterShortStyle];
+        [dateFormatter setTimeStyle:NSDateFormatterShortStyle];
+        lastDateStr = [dateFormatter stringFromDate:date];
+        NSLog(@"formattedDateString for locale %@: %@", [[dateFormatter locale] localeIdentifier], lastDateStr);
+    } else {
+        [self printError:error.description];
+        NSLog(@"%@", error.description);
+        lastDateStr = @"error";
+          }
+    } else {
+        lastDateStr = @"not run yet";
     }
-}*/
+    [self.lastScheduledRun setStringValue:lastDateStr];
+
+}
 
 /*
  Console
@@ -116,8 +152,8 @@
 }
 
 - (void)printMessageSynced:(NSString*)message {
-    NSLog(message);
-    [self printMessage:message color:[NSColor whiteColor] ];
+     NSLog(@"%@",message);
+    [self printMessage:message color:[NSColor blackColor] ];
     }
 - (void)printError:(NSString*)message {
     NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
@@ -125,13 +161,10 @@
                                                                               object:message ];
     [outputOperationQueue addOperation:operation];
 }
-- (IBAction)selectEmailAccount:(id)sender {
-    NSString *selectedEmail = self.eMailSelector.selectedItem.title;
-    NSLog(selectedEmail);
-    
-}
+
+
 - (void)printErrorSynced:(NSString*)message {
-    NSLog(message);
+     NSLog(@"%@",message);
     [self printMessage:message color:[NSColor redColor] ];
 }
 - (void)printMessage:(NSString*)message color:(NSColor*)color {
@@ -154,45 +187,15 @@
     
 }
 
-/* 
- Main Window/Tab
- */
-- (IBAction)startCustomTask:(id)sender {
-    NSArray *arguments = [self.parameter.stringValue componentsSeparatedByString:@" "];
-    [self runScript:arguments outputHandler:nil returnHandler:nil];
-}
-- (IBAction)refreshEmailSelector {
-    
-    
-    NSError *error = nil;
-        NSArray *desktopFiles = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[[NSFileManager defaultManager] applicationSupportDirectory] error:&error];
-    
-    if(desktopFiles == nil){
-        NSLog(@"%@", [error localizedDescription]);
-        [self printError:[error localizedDescription]];
-        return;
-    }
- 
-   
-    [self.eMailSelector removeAllItems];
-    
-    [self.eMailSelector addItemWithTitle:@""];
-    for (id filename in desktopFiles){
-        BOOL isDir;
-        NSString* emaildir = [[NSFileManager defaultManager] applicationSupportDirectory];
-        emaildir=   [emaildir stringByAppendingPathComponent:filename];
-        if([[NSFileManager defaultManager]
-            
-            fileExistsAtPath:emaildir isDirectory:&isDir] && isDir){
-                       [self.eMailSelector addItemWithTitle:filename];
-        }
-    }
-}
 
 
 
 
 /* Start/Stop Task */
+- (IBAction)startCustomTask:(id)sender {
+    NSArray *arguments = [self.parameter.stringValue componentsSeparatedByString:@" "];
+    [self runScript:arguments outputHandler:nil returnHandler:nil];
+}
 
 - (IBAction)pressEnter:(id)sender {
     [self pressEnter];

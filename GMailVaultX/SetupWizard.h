@@ -12,10 +12,8 @@
 
 #import "NSFileManager+DirectoryLocations.h"
 
-int const inititalSheetWidth = 300;
-int const inititalSheetHeight = 120;
 
-@interface AppController : NSObject
+@interface SetupWizard : NSObject
 @property (weak) IBOutlet NSButton *closeButton;
 
 @property (assign) IBOutlet NSWindow *sheet;
@@ -29,8 +27,6 @@ int const inititalSheetHeight = 120;
 -(IBAction) activateSheet:(id)sender;
 -(IBAction) closeSheet:(id)sender;
 
-//setup wizard
-//@property (assign) IBOutlet NSWindow *setupDialog;
 
 @property (weak) IBOutlet NSTextField *setupTab0EmailInput;
 @property (weak) IBOutlet NSButton *setupTab0NextButton;
@@ -39,7 +35,5 @@ int const inititalSheetHeight = 120;
 @property (weak) IBOutlet NSButton *setupTab3NextButton;
 
 @property (weak) IBOutlet NSTextField *setupStatus;
-//@property  NSWindowController *setupWizard;
-//@property  NSWindow *setupWizardSheet;
 
 @end

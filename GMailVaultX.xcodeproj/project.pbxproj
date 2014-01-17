@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA46BFE21888A7C7005D96DA /* RestoreWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = AA46BFE11888A7C7005D96DA /* RestoreWizard.m */; };
+		AA46BFE41888A82C005D96DA /* RestoreWizard.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA46BFE31888A82C005D96DA /* RestoreWizard.xib */; };
 		AA587691187C4212008CF94C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA587690187C4212008CF94C /* AppDelegate.m */; };
 		AA633EE81887470900F4B329 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAE8396C188742F600C17D61 /* MainMenu.xib */; };
-		AA633EEB188748E400F4B329 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA633EEA188748E400F4B329 /* AppController.m */; };
+		AA633EEB188748E400F4B329 /* SetupWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = AA633EEA188748E400F4B329 /* SetupWizard.m */; };
 		AA633EF618876BB800F4B329 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA633EF518876BB800F4B329 /* WebKit.framework */; };
 		AA633EF8188770D300F4B329 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA633EF7188770D300F4B329 /* QuartzCore.framework */; };
 		AA658D6E187B43C1003EECC6 /* gmv_runner in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D68187B4351003EECC6 /* gmv_runner */; };
@@ -22,6 +24,8 @@
 		AA658D77187B4415003EECC6 /* lib in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D64187B431A003EECC6 /* lib */; };
 		AA658D78187B4415003EECC6 /* PythonApplet.icns in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D65187B431A003EECC6 /* PythonApplet.icns */; };
 		AA658D79187B4415003EECC6 /* site.pyc in CopyFiles */ = {isa = PBXBuildFile; fileRef = AA658D66187B431A003EECC6 /* site.pyc */; };
+		AAA82EBF1888BBDE000FB044 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = AAA82EBE1888BBDE000FB044 /* TODO */; };
+		AAA82EC11888BC82000FB044 /* backup-gmail.sh in Resources */ = {isa = PBXBuildFile; fileRef = AAA82EC01888BC82000FB044 /* backup-gmail.sh */; };
 		AAACE466187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = AAACE465187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m */; };
 		AAB09A2F187AF12400580CA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB09A2E187AF12400580CA8 /* Cocoa.framework */; };
 		AAB09A39187AF12400580CA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAB09A37187AF12400580CA8 /* InfoPlist.strings */; };
@@ -80,10 +84,13 @@
 
 /* Begin PBXFileReference section */
 		AA38CB2B187B3F5E00426D34 /* PkgInfo */ = {isa = PBXFileReference; lastKnownFileType = text; name = PkgInfo; path = gmvault/dist/dist/gmv_runner.app/Contents/PkgInfo; sourceTree = "<group>"; };
+		AA46BFE01888A7C7005D96DA /* RestoreWizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreWizard.h; sourceTree = "<group>"; };
+		AA46BFE11888A7C7005D96DA /* RestoreWizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreWizard.m; sourceTree = "<group>"; };
+		AA46BFE31888A82C005D96DA /* RestoreWizard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestoreWizard.xib; sourceTree = "<group>"; };
 		AA58768F187C4212008CF94C /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GMailVaultX/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		AA587690187C4212008CF94C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = GMailVaultX/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		AA633EE9188748E400F4B329 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		AA633EEA188748E400F4B329 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		AA633EE9188748E400F4B329 /* SetupWizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupWizard.h; sourceTree = "<group>"; };
+		AA633EEA188748E400F4B329 /* SetupWizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupWizard.m; sourceTree = "<group>"; };
 		AA633EF518876BB800F4B329 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		AA633EF7188770D300F4B329 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		AA658D60187B431A003EECC6 /* __boot__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = __boot__.py; path = gmvault/dist/dist/gmv_runner.app/Contents/Resources/__boot__.py; sourceTree = "<group>"; };
@@ -96,6 +103,8 @@
 		AA658D68187B4351003EECC6 /* gmv_runner */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = gmv_runner; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/gmv_runner; sourceTree = "<group>"; };
 		AA658D69187B4351003EECC6 /* python */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = python; path = gmvault/dist/dist/gmv_runner.app/Contents/MacOS/python; sourceTree = "<group>"; };
 		AA658D6D187B4397003EECC6 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = gmvault/dist/dist/gmv_runner.app/Contents/Frameworks/Python.framework; sourceTree = "<group>"; };
+		AAA82EBE1888BBDE000FB044 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		AAA82EC01888BC82000FB044 /* backup-gmail.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "backup-gmail.sh"; path = "../../../gmvault/backup-gmail.sh"; sourceTree = "<group>"; };
 		AAACE464187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
 		AAACE465187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
 		AAB09A2B187AF12400580CA8 /* GMailVault X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GMailVault X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -252,8 +261,12 @@
 				AAB09A46187AF12400580CA8 /* Images.xcassets */,
 				AAB09A35187AF12400580CA8 /* Supporting Files */,
 				AABB8F2A18873635006EEA63 /* SetupWizard.xib */,
-				AA633EE9188748E400F4B329 /* AppController.h */,
-				AA633EEA188748E400F4B329 /* AppController.m */,
+				AA633EE9188748E400F4B329 /* SetupWizard.h */,
+				AA633EEA188748E400F4B329 /* SetupWizard.m */,
+				AA46BFE01888A7C7005D96DA /* RestoreWizard.h */,
+				AA46BFE11888A7C7005D96DA /* RestoreWizard.m */,
+				AA46BFE31888A82C005D96DA /* RestoreWizard.xib */,
+				AAA82EBE1888BBDE000FB044 /* TODO */,
 			);
 			name = "GMailVault X";
 			path = GMailVaultX;
@@ -262,6 +275,7 @@
 		AAB09A35187AF12400580CA8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAA82EC01888BC82000FB044 /* backup-gmail.sh */,
 				AA658D82187B85B2003EECC6 /* toolbar */,
 				AAB09A36187AF12400580CA8 /* GMailVault X-Info.plist */,
 				AAB09A37187AF12400580CA8 /* InfoPlist.strings */,
@@ -354,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFF5ED7187B8D8900920F9D /* settings.png in Resources */,
+				AAA82EBF1888BBDE000FB044 /* TODO in Resources */,
 				AAFF5ED6187B8D8900920F9D /* settings_selected.png in Resources */,
 				AAFF5ED4187B8D8900920F9D /* scheduler_selected.png in Resources */,
 				AA633EE81887470900F4B329 /* MainMenu.xib in Resources */,
@@ -364,6 +379,8 @@
 				AAFF5ED5187B8D8900920F9D /* scheduler.png in Resources */,
 				AAB09A3F187AF12400580CA8 /* Credits.rtf in Resources */,
 				AAFF5ED3187B8D8900920F9D /* gmvault.png in Resources */,
+				AA46BFE41888A82C005D96DA /* RestoreWizard.xib in Resources */,
+				AAA82EC11888BC82000FB044 /* backup-gmail.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +392,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAB09A3B187AF12400580CA8 /* main.m in Sources */,
-				AA633EEB188748E400F4B329 /* AppController.m in Sources */,
+				AA46BFE21888A7C7005D96DA /* RestoreWizard.m in Sources */,
+				AA633EEB188748E400F4B329 /* SetupWizard.m in Sources */,
 				AA587691187C4212008CF94C /* AppDelegate.m in Sources */,
 				AAACE466187E0E8700DE5E8F /* NSFileManager+DirectoryLocations.m in Sources */,
 				AABB8F291886E0E5006EEA63 /* NSTask+PTY.m in Sources */,

@@ -1,0 +1,11 @@
+
+
+17.1.2014:
+-- add progress bar for wizard while gmvault running
+-- scheduling, hook launchd
+-- disable main window when no account selected
+-- add restoreYYYYMMDDHHMM label to restored mails/chats
+-- oauth-fail hook
+-- gmvault error hook: auth
+-- hide/show console
+-- merge oauth-code from both wizards to main class
